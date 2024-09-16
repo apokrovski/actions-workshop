@@ -25,9 +25,9 @@ jobs:
         run: |
           echo "Hello $MY_ENV"
           echo "Hello $GITHUB_ACTOR"
-
-      - name: Run a multi-line script
-        run: |
-          echo ..
-          echo ..
           echo "The secret is: $SUPER_SECRET"
+      - name: Ship it
+        uses: mscoutermarsh/cowsays-action@master
+        with:
+          text: "ship ship ship!"
+          color: "green"
