@@ -28,6 +28,6 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          ..
-          ..
+          echo ..
+          echo ..
           echo "The secret is: $SUPER_SECRET"
